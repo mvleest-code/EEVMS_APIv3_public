@@ -1,0 +1,27 @@
+<html>
+<head>
+  <!DOCTYPE html> <html><head><title>Media cookie test</title>
+</head>
+<body>MP4 / Media Cookie Tester<br>
+<script>
+    var myHeaders = new Headers();
+    myHeaders.append("Authorization", "Bearer <access_token>"); // Replace <access_token> with your access token
+
+    var requestOptions = {
+      method: 'GET',
+      headers: myHeaders,
+      credentials: 'include'
+    };
+   
+    fetch("https://<baseUrl>/api/v3.0/media/session", requestOptions) // Replace <baseUrl> with your base URL, can be request from "clientSettings" endpoint
+      .then(response => response.json() )
+      .then( body => fetch(body.url, requestOptions) )
+      .then( response => console.log("response status", response.status ) )
+      .catch(error => console.log('error', error));
+</script>
+
+<video width="640" height="480" controls autoplay>
+    <source src="<mp4URL>" /> <!-- Replace <mp4URL> with your MP4 URL, can be requested from the /media endpoint -->
+</video>
+</body> 
+</html>

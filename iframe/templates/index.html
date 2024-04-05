@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Access Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label, .form-group input {
+            display: block;
+            margin: auto;
+            width: 600px;
+            padding: 5px;
+            text-align: center;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>iframe.m-cloud.nl</h1>
+        <form id="accessForm">
+            <div class="form-group">
+                <label for="access_token">Access Token:</label>
+                <input type="text" id="access_token" name="access_token" required>
+            </div>
+            <div class="form-group">
+                <label for="camera_id">Camera ID:</label>
+                <input type="text" id="camera_id" name="camera_id" required>
+            </div>
+            <div class="form-actions">
+                <button type="button" onclick="submitForm('/live')">Go to Live View</button>
+                <button type="button" onclick="submitForm('/history')">View History</button>
+                <button type="button" onclick="submitForm('/historylive')">History Live View</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Load stored values if any
+            if(localStorage.getItem('access_token')) {
+                document.getElementById('access_token').value = localStorage.getItem('access_token');
+            }
+            if(localStorage.getItem('camera_id')) {
+                document.getElementById('camera_id').value = localStorage.getItem('camera_id');
+            }
+        });
+
+        function submitForm(actionPath) {
+            // Store form data
+            localStorage.setItem('access_token', document.getElementById('access_token').value);
+            localStorage.setItem('camera_id', document.getElementById('camera_id').value);
+
+            // Redirect to the desired path with query parameters
+            window.location.href = `${actionPath}?access_token=${encodeURIComponent(document.getElementById('access_token').value)}&camera_id=${encodeURIComponent(document.getElementById('camera_id').value)}`;
+        }
+    </script>
+</body>
+</html>

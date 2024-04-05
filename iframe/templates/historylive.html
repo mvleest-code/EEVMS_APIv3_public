@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label, .form-group input, .form-actions button {
+            display: block;
+            margin: auto;
+            width: fit-content;
+            padding: 5px;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="goBack()">Back</button>
+        </div>
+        <div class="container">
+        <iframe 
+          id="test-iframe" 
+          height="700" 
+          width="100%" 
+          title="History Browser"
+        ></iframe>
+    </div>
+    <script>
+      // Function to parse URL query parameters
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Get access_token and camera_id from the URL
+      const access_token = getQueryParam('access_token');
+      const camera_id = getQueryParam('camera_id');
+
+      // Set the src for the iframe dynamically using camera_id
+      document.getElementById('test-iframe').src = `https://iframe.eagleeyenetworks.com/#/historylive/${camera_id}`;
+
+      const iframe = document.getElementById('test-iframe').contentWindow;
+
+      window.addEventListener("message", event => {
+        if (event.data === 'een-iframe-loaded' || event.data === "een-iframe-token-expired") {
+          // Send the access_token dynamically
+          iframe.postMessage({ 
+            type: "een-token", 
+            token: access_token
+          }, "https://iframe.eagleeyenetworks.com/");
+        }
+      });
+
+      function goBack() {
+          window.history.back();
+      }
+    </script>
+</body>
+</html>
