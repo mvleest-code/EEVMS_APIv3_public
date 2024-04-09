@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>iframe example</title>
+  </head>
+  <body>
+    <iframe 
+      id="test-iframe" 
+      height="700" 
+      width="1000" 
+      title="History Browser" 
+      src="https://iframe.eagleeyenetworks.com/#/history?ids=1002931e"
+    ></iframe>
+    <script>
+      const iframe = document.getElementById("test-iframe").contentWindow;
+      window.addEventListener("message", event => {
+        if (event.data === 'een-iframe-loaded' || event.data === "een-iframe-token-expired") {
+          iframe.postMessage({ 
+            type: "een-token", 
+            token: "eyJraWQiOiI2ODYxYjBjYS0wZjI2LTExZWQtODYxZC0wMjQyYWMxMjAwMDIiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjYTBmNjFhYiIsImF1ZCI6InZtcy5hcGkiLCJpc3MiOiJ2bXMuYXV0aC52MSIsInZtc19hY2NvdW50IjoiMDAwMDExMDYiLCJleHAiOjE3MTMyNDk4NzQsImlhdCI6MTcxMjY0NTA3NCwianRpIjoiYTc3YWFkY2ZmNGNhOWE2YzNlYzNiYTc1OWZkZWJmMGMiLCJjbGllbnRfaWQiOiJPTEQtV0VCIiwidm1zX2NsdXN0ZXIiOiJjMDAwIn0.IVdvEFOTndLsmAXTL9OTufBtkuvCoOVSEXouYsBFPEkDSXE3o0oCX4vTwhMPdl_DWBHudNQaN5WExMjXubbcEi5tFutBSbAr8XHDeNglgOpA5AfjJ1jATYg_JMEYZwHBTWA9c3MmcMc4PdKILnuwi3wI9YOY-or0a968ZkyY7bf74uNNdjXkbsJPNrSUL_ptXJd0gUEjJtUBOC2vB88E2mJeYgHtq9Lp5vCfKveDWM0Qbc8J1tqnb266t23wQuurjavRFQPDTQYQl0urcniG85GBVcRaiFBtTWr-pt6ygnwBTjkNY-Ph11r8VP3yNns-Bvl67WJ2mgeBBKiScO3gow"
+          }, "https://iframe.eagleeyenetworks.com/");
+        }
+      });
+    </script>
+  </body>
+</html>
