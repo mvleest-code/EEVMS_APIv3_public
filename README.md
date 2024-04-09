@@ -1,6 +1,6 @@
 ## EEVMS_APIv3_public ##
 
-This repo contains code that I used while testing/supporting the Eagle Eye Networks API v3.
+This repo contains code that I use while testing/supporting the Eagle Eye Networks API v3.
 
 ### Disclaimer ###
 This repository contains test code that interacts with Eagle Eye Networks API v3. Please note the following:
