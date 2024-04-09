@@ -29,4 +29,7 @@ Add a cameraId to the "src" of the iFrame and the accessToken to "token" within 
     </script>
   </body>
 </html>
-```
+````
+
+## How to test? ##
+You should be able to run index.html from within your browser without any CORS restrictions.
