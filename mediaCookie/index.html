@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live preview video</title> 
+    </head> 
+    <body>
+
+        <script>
+            var requestOptions = {
+              method: 'GET',
+              headers: {
+                "Authorization" : "Bearer eyJraWQiOiI2ODYxYjBjYS0wZjI2LTExZWQtODYxZC0wMjQyYWMxMjAwMDIiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjYTBmNjFhYiIsImF1ZCI6InZtcy5hcGkiLCJpc3MiOiJ2bXMuYXV0aC52MSIsInZtc19hY2NvdW50IjoiMDAwMDExMDYiLCJleHAiOjE3MTMyNDk4NzQsImlhdCI6MTcxMjY0NTA3NCwianRpIjoiYTc3YWFkY2ZmNGNhOWE2YzNlYzNiYTc1OWZkZWJmMGMiLCJjbGllbnRfaWQiOiJPTEQtV0VCIiwidm1zX2NsdXN0ZXIiOiJjMDAwIn0.IVdvEFOTndLsmAXTL9OTufBtkuvCoOVSEXouYsBFPEkDSXE3o0oCX4vTwhMPdl_DWBHudNQaN5WExMjXubbcEi5tFutBSbAr8XHDeNglgOpA5AfjJ1jATYg_JMEYZwHBTWA9c3MmcMc4PdKILnuwi3wI9YOY-or0a968ZkyY7bf74uNNdjXkbsJPNrSUL_ptXJd0gUEjJtUBOC2vB88E2mJeYgHtq9Lp5vCfKveDWM0Qbc8J1tqnb266t23wQuurjavRFQPDTQYQl0urcniG85GBVcRaiFBtTWr-pt6ygnwBTjkNY-Ph11r8VP3yNns-Bvl67WJ2mgeBBKiScO3gow"
+              },
+              credentials: 'include'
+            };
+
+            fetch("https://api.c000.eagleeyenetworks.com/api/v3.0/media/session", requestOptions)
+              .then(response => response.json() )
+              .then( body => fetch(body.url, requestOptions) )
+              .then( response => console.log("response status", response.status ) )
+              .catch(error => console.log('error', error));
+        </script>
+        <img src="https://media.c000.eagleeyenetworks.com:443/media/streams/preview/multipart?esn=1002931e&stream_session=df8b1c36-3c9c-440c-88ed-d6cf562717f4"/>
+    </body>
+</html>
+
+
+
