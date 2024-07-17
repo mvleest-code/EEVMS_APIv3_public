@@ -26,4 +26,4 @@ EXPOSE 3334
 ENV FLASK_ENV=production
 
 # Run app.py when the container launches
-CMD ["python3", "localvmsauthentication.py"]
+CMD ["python3", "app.py"]
