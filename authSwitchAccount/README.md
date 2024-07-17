@@ -10,7 +10,7 @@ A reseller needs to manage bridges or cameras within one of the end-user account
 To use this library, you need to have Python installed. You can install the required dependencies by running the following command:
 
 ```shell
-pip install requests json python-dotenv
+pip install requests python-dotenv
 ```
 
 ## Usage
