@@ -306,6 +306,38 @@
         "documentation": {}
     },
     {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -998,6 +1030,42 @@
         "description": ".history.authSwitchAccount.app_20240717103118",
         "peekOfCode": "class EagleEyeNetworks:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
         "detail": ".history.authSwitchAccount.app_20240717103118",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetworks",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717104148",
+        "description": ".history.authSwitchAccount.app_20240717104148",
+        "peekOfCode": "class EagleEyeNetworks:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717104148",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetworks",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717104224",
+        "description": ".history.authSwitchAccount.app_20240717104224",
+        "peekOfCode": "class EagleEyeNetworks:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717104224",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetworks",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717104230",
+        "description": ".history.authSwitchAccount.app_20240717104230",
+        "peekOfCode": "class EagleEyeNetworks:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717104230",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetworks",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717104242",
+        "description": ".history.authSwitchAccount.app_20240717104242",
+        "peekOfCode": "class EagleEyeNetworks:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717104242",
         "documentation": {}
     },
     {

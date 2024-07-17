@@ -34,7 +34,6 @@ class EagleEyeNetworks:
             print("Results:")
             for result in data['results']:
                 print(f"- ID: {result['id']}, Name: {result['name']}, Status: {result['status']}, Type: {result['type']}")
-                self.account_id = result['id']
             return data['results']
         else:
             # If the request failed, print the error message
