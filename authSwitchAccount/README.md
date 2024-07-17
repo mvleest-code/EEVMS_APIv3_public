@@ -30,9 +30,10 @@ import os
 load_dotenv()
 ```
 
-`.env`contains::
-    ACCESS_TOKEN=''
-    BASE_URL='api.cXXX.eagleeyenetworks.com'
+1. `.env`contains:
+
+ACCESS_TOKEN=''
+BASE_URL='api.cXXX.eagleeyenetworks.com'
 
 1. Create an instance of the `EagleEyeNetwork` class:
 
