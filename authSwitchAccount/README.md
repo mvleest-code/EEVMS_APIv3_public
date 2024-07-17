@@ -32,8 +32,10 @@ load_dotenv()
 
 1. `.env`contains:
 
+```shell
 ACCESS_TOKEN=''
 BASE_URL='api.cXXX.eagleeyenetworks.com'
+```
 
 1. Create an instance of the `EagleEyeNetwork` class:
 
