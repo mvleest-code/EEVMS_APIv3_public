@@ -11,7 +11,7 @@ headers = {
     }
 # select filed to be send:
 files = {
-    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')
+    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')
 }
 # making the actual request:
 response = requests.post(url, headers=headers, files=files)

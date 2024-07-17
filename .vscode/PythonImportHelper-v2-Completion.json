@@ -347,61 +347,12 @@
         "documentation": {}
     },
     {
-        "label": "base64",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "base64",
-        "description": "base64",
-        "detail": "base64",
-        "documentation": {}
-    },
-    {
-        "label": "quote",
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
-        "isExtraImport": true,
-        "detail": "urllib.parse",
-        "documentation": {}
-    },
-    {
-        "label": "quote",
-        "importPath": "urllib.parse",
-        "description": "urllib.parse",
-        "isExtraImport": true,
-        "detail": "urllib.parse",
-        "documentation": {}
-    },
-    {
-        "label": "exit",
-        "importPath": "sys",
-        "description": "sys",
-        "isExtraImport": true,
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "json,",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "json.",
         "description": "json.",
         "detail": "json.",
-        "documentation": {}
-    },
-    {
-        "label": "Flask",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
-        "documentation": {}
-    },
-    {
-        "label": "request",
-        "importPath": "flask",
-        "description": "flask",
-        "isExtraImport": true,
-        "detail": "flask",
         "documentation": {}
     },
     {
@@ -610,6 +561,23 @@
         "description": "flask",
         "isExtraImport": true,
         "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "quote",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
         "documentation": {}
     },
     {
@@ -1069,165 +1037,165 @@
         "documentation": {}
     },
     {
-        "label": "client_id",
+        "label": "access_token",
         "kind": 5,
-        "importPath": "authEmbedded.encode_cc_base64",
-        "description": "authEmbedded.encode_cc_base64",
-        "peekOfCode": "client_id = \"\"\nclient_secret = \"\"\nauth_string = f\"{client_id}:{client_secret}\"\nencoded_auth_string = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')\nprint(f\"Encoded: {encoded_auth_string}\")",
-        "detail": "authEmbedded.encode_cc_base64",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "access_token = \"\"\ncameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "client_secret",
+        "label": "cameraId",
         "kind": 5,
-        "importPath": "authEmbedded.encode_cc_base64",
-        "description": "authEmbedded.encode_cc_base64",
-        "peekOfCode": "client_secret = \"\"\nauth_string = f\"{client_id}:{client_secret}\"\nencoded_auth_string = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')\nprint(f\"Encoded: {encoded_auth_string}\")",
-        "detail": "authEmbedded.encode_cc_base64",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "cameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "auth_string",
+        "label": "url",
         "kind": 5,
-        "importPath": "authEmbedded.encode_cc_base64",
-        "description": "authEmbedded.encode_cc_base64",
-        "peekOfCode": "auth_string = f\"{client_id}:{client_secret}\"\nencoded_auth_string = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')\nprint(f\"Encoded: {encoded_auth_string}\")",
-        "detail": "authEmbedded.encode_cc_base64",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "url = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "encoded_auth_string",
+        "label": "headers",
         "kind": 5,
-        "importPath": "authEmbedded.encode_cc_base64",
-        "description": "authEmbedded.encode_cc_base64",
-        "peekOfCode": "encoded_auth_string = base64.b64encode(auth_string.encode('utf-8')).decode('utf-8')\nprint(f\"Encoded: {encoded_auth_string}\")",
-        "detail": "authEmbedded.encode_cc_base64",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "headers = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "read_json",
-        "kind": 2,
-        "importPath": "authEmbedded.generate_new_token",
-        "description": "authEmbedded.generate_new_token",
-        "peekOfCode": "def read_json(filename):\n    with open(filename, 'r') as f:\n        return json.load(f)\ndef write_json(filename, data):\n    with open(filename, 'w') as f:\n        json.dump(data, f, indent=4)\ndef make_request(url, headers, data):\n    try:\n        response = requests.post(url, headers=headers, data=data)\n        response.raise_for_status()",
-        "detail": "authEmbedded.generate_new_token",
-        "documentation": {}
-    },
-    {
-        "label": "write_json",
-        "kind": 2,
-        "importPath": "authEmbedded.generate_new_token",
-        "description": "authEmbedded.generate_new_token",
-        "peekOfCode": "def write_json(filename, data):\n    with open(filename, 'w') as f:\n        json.dump(data, f, indent=4)\ndef make_request(url, headers, data):\n    try:\n        response = requests.post(url, headers=headers, data=data)\n        response.raise_for_status()\n        return response.json()\n    except requests.exceptions.RequestException as e:\n        print(f\"Error: {e}\")",
-        "detail": "authEmbedded.generate_new_token",
-        "documentation": {}
-    },
-    {
-        "label": "make_request",
-        "kind": 2,
-        "importPath": "authEmbedded.generate_new_token",
-        "description": "authEmbedded.generate_new_token",
-        "peekOfCode": "def make_request(url, headers, data):\n    try:\n        response = requests.post(url, headers=headers, data=data)\n        response.raise_for_status()\n        return response.json()\n    except requests.exceptions.RequestException as e:\n        print(f\"Error: {e}\")\n        if response:\n            print(f\"Status Code: {response.status_code}, Reason: {response.reason}\")\n        exit(1)",
-        "detail": "authEmbedded.generate_new_token",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "authEmbedded.generate_new_token",
-        "description": "authEmbedded.generate_new_token",
-        "peekOfCode": "def main():\n    access_data = read_json('access_response.json')\n    client_data = read_json('clientidbase64.json')\n    required_keys = ['access_token', 'refresh_token', 'scope', 'token_type', 'cc_base64']\n    required_data = {key: access_data.get(key) if key in access_data else client_data.get(key) for key in required_keys}\n    if not all(required_data.values()):\n        print(\"Required data missing from JSON files\")\n        exit(1)\n    headers = {\n        \"Accept\": \"application/json\",",
-        "detail": "authEmbedded.generate_new_token",
-        "documentation": {}
-    },
-    {
-        "label": "URL",
+        "label": "files",
         "kind": 5,
-        "importPath": "authEmbedded.generate_new_token",
-        "description": "authEmbedded.generate_new_token",
-        "peekOfCode": "URL = \"https://auth.eagleeyenetworks.com/oauth2/token\"\ndef read_json(filename):\n    with open(filename, 'r') as f:\n        return json.load(f)\ndef write_json(filename, data):\n    with open(filename, 'w') as f:\n        json.dump(data, f, indent=4)\ndef make_request(url, headers, data):\n    try:\n        response = requests.post(url, headers=headers, data=data)",
-        "detail": "authEmbedded.generate_new_token",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "files = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:\nresponse = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "getTokens",
-        "kind": 2,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "def getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)\n        accessToken = oauthObject.get('access_token', None)\n        print(f\"Debug - Access Token: {accessToken}\")  # Debug\n        if accessToken:\n            return accessToken, oauthObject\n    print(f\"Debug - Failed to get Access Token. Response: {response.text}\")  # Debug",
-        "detail": "authEmbedded.vmslocalhost",
-        "documentation": {}
-    },
-    {
-        "label": "get_base_url",
-        "kind": 2,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "def get_base_url(accessToken):\n    url = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\n    headers = {\n        \"accept\": \"application/json\",\n        \"authorization\": f\"Bearer {accessToken}\"\n    }\n    response = requests.get(url, headers=headers)\n    if response.status_code == 200:\n        settings = json.loads(response.text)\n        hostname = settings.get('httpsBaseUrl', {}).get('hostname')",
-        "detail": "authEmbedded.vmslocalhost",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_details",
-        "kind": 2,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "def get_user_details(accessToken):\n    if not accessToken:\n        print(\"Debug - Access Token is None\")  # Debug\n        return {}\n    base_url = get_base_url(accessToken)\n    if not base_url:\n        print(\"Debug - Failed to get base URL\")\n        return {}\n    url = f\"https://{base_url}/api/v3.0/users/self\"  # Make sure this URL is correct\n    headers = {\"accept\": \"application/json\", \"authorization\": \"Bearer \" + accessToken}",
-        "detail": "authEmbedded.vmslocalhost",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "def index():\n    code = request.args.get('code')\n    if code:\n        accessToken, oauthObject = getTokens(code)\n        if accessToken is None:\n            return \"Failed to log in.\"\n        userDetails = get_user_details(accessToken)\n        userId = userDetails.get('id', 'unknown')\n        with open(f'{userId}_access_response.json', 'w') as f:\n            f.write(json.dumps(oauthObject))",
-        "detail": "authEmbedded.vmslocalhost",
-        "documentation": {}
-    },
-    {
-        "label": "app",
+        "label": "response",
         "kind": 5,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "app = Flask(__name__)\nhostName = \"127.0.0.1\"\nport = 3333\nclientId = \"\"\nclientSecret = \"\"\ndef getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)",
-        "detail": "authEmbedded.vmslocalhost",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240612000915",
+        "peekOfCode": "response = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240612000915",
         "documentation": {}
     },
     {
-        "label": "hostName",
+        "label": "access_token",
         "kind": 5,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "hostName = \"127.0.0.1\"\nport = 3333\nclientId = \"\"\nclientSecret = \"\"\ndef getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)\n        accessToken = oauthObject.get('access_token', None)",
-        "detail": "authEmbedded.vmslocalhost",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "access_token = \"\"\ncameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
         "documentation": {}
     },
     {
-        "label": "port",
+        "label": "cameraId",
         "kind": 5,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "port = 3333\nclientId = \"\"\nclientSecret = \"\"\ndef getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)\n        accessToken = oauthObject.get('access_token', None)\n        print(f\"Debug - Access Token: {accessToken}\")  # Debug",
-        "detail": "authEmbedded.vmslocalhost",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "cameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
         "documentation": {}
     },
     {
-        "label": "clientId",
+        "label": "url",
         "kind": 5,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "clientId = \"\"\nclientSecret = \"\"\ndef getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)\n        accessToken = oauthObject.get('access_token', None)\n        print(f\"Debug - Access Token: {accessToken}\")  # Debug\n        if accessToken:",
-        "detail": "authEmbedded.vmslocalhost",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "url = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
         "documentation": {}
     },
     {
-        "label": "clientSecret",
+        "label": "headers",
         "kind": 5,
-        "importPath": "authEmbedded.vmslocalhost",
-        "description": "authEmbedded.vmslocalhost",
-        "peekOfCode": "clientSecret = \"\"\ndef getTokens(code):\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=\" + code + \"&redirect_uri=http://\" + hostName + \":\" + str(port)\n    response = requests.post(url, auth=(clientId, clientSecret))\n    if response.status_code == 200:\n        oauthObject = json.loads(response.text)\n        accessToken = oauthObject.get('access_token', None)\n        print(f\"Debug - Access Token: {accessToken}\")  # Debug\n        if accessToken:\n            return accessToken, oauthObject",
-        "detail": "authEmbedded.vmslocalhost",
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "headers = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "files = {\n    'data': ('rubberdukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:\nresponse = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "peekOfCode": "response = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104700",
+        "documentation": {}
+    },
+    {
+        "label": "access_token",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "access_token = \"\"\ncameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "cameraId",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "cameraId = \"\"\nprint(\"sending audio to server...\")\nurl = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "url = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "headers",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "headers = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "files = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:\nresponse = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "peekOfCode": "response = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
         "documentation": {}
     },
     {
@@ -1375,132 +1343,6 @@
         "documentation": {}
     },
     {
-        "label": "make_request",
-        "kind": 2,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "def make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling\ndef get_tokens(code):\n    url = f\"{AUTH_URL}/oauth2/token?grant_type=authorization_code&scope=vms.all&code={code}&redirect_uri=http://{HOST_NAME}:{PORT}\"\n    return make_request(\"POST\", url, auth=(CLIENT_ID, CLIENT_SECRET))",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "get_tokens",
-        "kind": 2,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "def get_tokens(code):\n    url = f\"{AUTH_URL}/oauth2/token?grant_type=authorization_code&scope=vms.all&code={code}&redirect_uri=http://{HOST_NAME}:{PORT}\"\n    return make_request(\"POST\", url, auth=(CLIENT_ID, CLIENT_SECRET))\ndef get_base_url(accessToken):\n    url = f\"{BASE_URL}/api/v3.0/clientSettings\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    settings = make_request(\"GET\", url, headers=headers)\n    return settings.get('httpsBaseUrl', {}).get('hostname') if settings else None\ndef get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "get_base_url",
-        "kind": 2,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "def get_base_url(accessToken):\n    url = f\"{BASE_URL}/api/v3.0/clientSettings\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    settings = make_request(\"GET\", url, headers=headers)\n    return settings.get('httpsBaseUrl', {}).get('hostname') if settings else None\ndef get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    return make_request(\"GET\", url, headers=headers)\n# Route Handlers",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "get_user_details",
-        "kind": 2,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "def get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    return make_request(\"GET\", url, headers=headers)\n# Route Handlers\n@app.route('/')\ndef index():\n    code = request.args.get('code')\n    if code:\n        oauthObject = get_tokens(code)",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "index",
-        "kind": 2,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "def index():\n    code = request.args.get('code')\n    if code:\n        oauthObject = get_tokens(code)\n        accessToken = oauthObject.get('access_token') if oauthObject else None\n        base_url = get_base_url(accessToken) if accessToken else None\n        userDetails = get_user_details(accessToken, base_url) if base_url else None\n        userId = userDetails.get('email', 'unknown') if userDetails else 'unknown'\n        refresh_token = oauthObject.get('refresh_token', 'unknown') if oauthObject else 'unknown'\n        current_folder = os.path.dirname(os.path.abspath(__file__))",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "app",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "app = Flask(__name__)\n#### please note this is an example script ans should not be used in production ####\n#### If you are using this script in production, please make sure to use a secure method to store the client secret and client id ###\n#### This script is for educational purposes only ####\n#### not recommended for production use, please use a production server like wsgi ####\n# Constants\nHOST_NAME = \"127.0.0.1\"\nPORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "HOST_NAME",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "HOST_NAME = \"127.0.0.1\"\nPORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "PORT",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "PORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "CLIENT_ID",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "CLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "CLIENT_SECRET",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "CLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "AUTH_URL",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "AUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "BASE_URL",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "BASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling\ndef get_tokens(code):",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "LOGIN_TEMPLATE",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "LOGIN_TEMPLATE = '''\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Login Success</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" rel=\"stylesheet\">\n</head>\n<body>",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
-        "label": "LOGIN_LINK_TEMPLATE",
-        "kind": 5,
-        "importPath": "authM2M.genRefTokenCodeSample",
-        "description": "authM2M.genRefTokenCodeSample",
-        "peekOfCode": "LOGIN_LINK_TEMPLATE = '''\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Login</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" rel=\"stylesheet\">\n</head>\n<body>",
-        "detail": "authM2M.genRefTokenCodeSample",
-        "documentation": {}
-    },
-    {
         "label": "get_filepath",
         "kind": 2,
         "importPath": "authM2M.generate_access_token",
@@ -1552,6 +1394,132 @@
         "description": "authM2M.generate_access_token",
         "peekOfCode": "URL = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n# Function to get the absolute file path\ndef get_filepath(filename):\n    script_directory = os.path.dirname(os.path.abspath(__file__))\n    return os.path.join(script_directory, filename)\n# Function to write JSON data to a file\ndef write_json(filename, data):\n    with open(get_filepath(filename), 'w') as f:\n        json.dump(data, f, indent=4)\n# Function to make a POST request",
         "detail": "authM2M.generate_access_token",
+        "documentation": {}
+    },
+    {
+        "label": "make_request",
+        "kind": 2,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "def make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling\ndef get_tokens(code):\n    url = f\"{AUTH_URL}/oauth2/token?grant_type=authorization_code&scope=vms.all&code={code}&redirect_uri=http://{HOST_NAME}:{PORT}\"\n    return make_request(\"POST\", url, auth=(CLIENT_ID, CLIENT_SECRET))",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "get_tokens",
+        "kind": 2,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "def get_tokens(code):\n    url = f\"{AUTH_URL}/oauth2/token?grant_type=authorization_code&scope=vms.all&code={code}&redirect_uri=http://{HOST_NAME}:{PORT}\"\n    return make_request(\"POST\", url, auth=(CLIENT_ID, CLIENT_SECRET))\ndef get_base_url(accessToken):\n    url = f\"{BASE_URL}/api/v3.0/clientSettings\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    settings = make_request(\"GET\", url, headers=headers)\n    return settings.get('httpsBaseUrl', {}).get('hostname') if settings else None\ndef get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "get_base_url",
+        "kind": 2,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "def get_base_url(accessToken):\n    url = f\"{BASE_URL}/api/v3.0/clientSettings\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    settings = make_request(\"GET\", url, headers=headers)\n    return settings.get('httpsBaseUrl', {}).get('hostname') if settings else None\ndef get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    return make_request(\"GET\", url, headers=headers)\n# Route Handlers",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_details",
+        "kind": 2,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "def get_user_details(accessToken, base_url):\n    url = f\"https://{base_url}/api/v3.0/users/self\"\n    headers = {\"accept\": \"application/json\", \"authorization\": f\"Bearer {accessToken}\"}\n    return make_request(\"GET\", url, headers=headers)\n# Route Handlers\n@app.route('/')\ndef index():\n    code = request.args.get('code')\n    if code:\n        oauthObject = get_tokens(code)",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "def index():\n    code = request.args.get('code')\n    if code:\n        oauthObject = get_tokens(code)\n        accessToken = oauthObject.get('access_token') if oauthObject else None\n        base_url = get_base_url(accessToken) if accessToken else None\n        userDetails = get_user_details(accessToken, base_url) if base_url else None\n        userId = userDetails.get('email', 'unknown') if userDetails else 'unknown'\n        refresh_token = oauthObject.get('refresh_token', 'unknown') if oauthObject else 'unknown'\n        current_folder = os.path.dirname(os.path.abspath(__file__))",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "app = Flask(__name__)\n#### please note this is an example script ans should not be used in production ####\n#### If you are using this script in production, please make sure to use a secure method to store the client secret and client id ###\n#### This script is for educational purposes only ####\n#### not recommended for production use, please use a production server like wsgi ####\n# Constants\nHOST_NAME = \"127.0.0.1\"\nPORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "HOST_NAME",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "HOST_NAME = \"127.0.0.1\"\nPORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "PORT = 3333\nCLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "CLIENT_ID",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "CLIENT_ID = \"\" #### Please enter your client id here ####\nCLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "CLIENT_SECRET",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "CLIENT_SECRET =  \"\" #### Please enter your client secret here ####\nAUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_URL",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "AUTH_URL = \"https://auth.eagleeyenetworks.com\"\nBASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "BASE_URL = \"https://api.eagleeyenetworks.com\"\n# Utility Functions\ndef make_request(method, url, headers=None, auth=None):\n    response = requests.request(method, url, headers=headers, auth=auth)\n    if response.status_code == 200:\n        return json.loads(response.text)\n    else:\n        return None\n# OAuth and User Details Handling\ndef get_tokens(code):",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_TEMPLATE",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "LOGIN_TEMPLATE = '''\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Login Success</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" rel=\"stylesheet\">\n</head>\n<body>",
+        "detail": "authM2M.generate_refresh_token",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_LINK_TEMPLATE",
+        "kind": 5,
+        "importPath": "authM2M.generate_refresh_token",
+        "description": "authM2M.generate_refresh_token",
+        "peekOfCode": "LOGIN_LINK_TEMPLATE = '''\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Login</title>\n    <link href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" rel=\"stylesheet\">\n</head>\n<body>",
+        "detail": "authM2M.generate_refresh_token",
         "documentation": {}
     },
     {
@@ -2000,7 +1968,7 @@
         "kind": 5,
         "importPath": "mediaAudioPushHttps.audiopush",
         "description": "mediaAudioPushHttps.audiopush",
-        "peekOfCode": "url = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}",
+        "peekOfCode": "url = f'https://media.c001.eagleeyenetworks.com:443/media/streams/audio/{cameraId}/alaw'\nheaders = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}",
         "detail": "mediaAudioPushHttps.audiopush",
         "documentation": {}
     },
@@ -2009,7 +1977,7 @@
         "kind": 5,
         "importPath": "mediaAudioPushHttps.audiopush",
         "description": "mediaAudioPushHttps.audiopush",
-        "peekOfCode": "headers = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:",
+        "peekOfCode": "headers = {\n    'accept': '*/*',\n    'Content-Type': 'multipart/form-data',\n    'authorization': 'Bearer ' + access_token\n    }\n# select filed to be send:\nfiles = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:",
         "detail": "mediaAudioPushHttps.audiopush",
         "documentation": {}
     },
@@ -2018,7 +1986,7 @@
         "kind": 5,
         "importPath": "mediaAudioPushHttps.audiopush",
         "description": "mediaAudioPushHttps.audiopush",
-        "peekOfCode": "files = {\n    'data': ('rubbertukky.raw', open('rubbertukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:\nresponse = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
+        "peekOfCode": "files = {\n    'data': ('rubberdukky.raw', open('rubberdukky.raw', 'rb'), 'audio/wav')\n}\n# making the actual request:\nresponse = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
         "detail": "mediaAudioPushHttps.audiopush",
         "documentation": {}
     },
@@ -2110,141 +2078,6 @@
         "description": "mediaCookie.localhost",
         "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef index():\n    return render_template('index.html')\nif __name__ == '__main__':\n    app.run(host='127.0.0.1', port=3333)",
         "detail": "mediaCookie.localhost",
-        "documentation": {}
-    },
-    {
-        "label": "get_session_response",
-        "kind": 2,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "def get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"\n    headers = {\n        \"accept\": \"application/json\",\n        \"authorization\": \"Bearer \" + access_token\n    }\n    try:\n        session_response = requests.get(session_url, headers=headers, cookies={'credentials': 'include'})\n        session_response.raise_for_status()\n    except requests.exceptions.RequestException as e:",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "getfeeds",
-        "kind": 2,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "def getfeeds():\n        ## request cameras ##        \n        url = \"https://\" + httpsBaseURL + \"/api/v3.0/feeds?deviceId=\" + camid + \"&type=main&include=flvUrl&include=rtspUrl&include=rtspsUrl&include=hlsUrl&include=multipartUrl&include=webRtcUrl&pageSize=100\"\n        headers = {\"accept\": \"application/json\",\n                    \"authorization\": token_type +  ' ' +access_token\n                    }\n        getfeeds = requests.get(url, headers=headers)\n        data = json.loads(getfeeds.text)\n        print(\"Loading Camera Feeds\", getfeeds.status_code)\n        flvUrl = data['results'][0]['flvUrl']",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "print_menu",
-        "kind": 2,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "def print_menu():\n    # Display menu with streaming protocol options\n    print(\"Select an option (enter the corresponding number):\")\n    print(\"1- Multipart preview\")\n    print(\"2- Multipart full\")\n    print(\"3 - RTSP Over TCP\")\n    print(\"4 - RTSP Over UDP\")\n    print(\"5 - RTSPS\")\n    print(\"6 - HLS\")\n    print(\"7 - FLV\")",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "execute_command",
-        "kind": 2,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "def execute_command(choice, token, url):\n    # Execute the appropriate FFplay command based on user's choice\n    commands = [\n        #\"ffplay -headers \\\"Authorization: Bearer {1}\\\" \\\"{0}\\\"\",\n        \"ffplay -headers \\\"Authorization: Bearer {1}\\\" -f mjpeg \\\"{0}\\\"\", # 1 multipart preview\n        \"ffplay -headers \\\"Authorization: Bearer {1}\\\" -f h264 \\\"{0}\\\"\", # 2 multipart full\n        \"ffplay -rtsp_transport tcp \\\"{}&access_token={}\\\"\", # 3 rtsp over tcp\n        \"ffplay -rtsp_transport udp \\\"{}&access_token={}\\\"\", # 4 rtsp over udp\n        \"ffplay \\\"{}&access_token={}\\\"\", # 5 rtsps\n        \"ffplay -headers \\\"Authorization: Bearer {1}\\\" \\\"{0}\\\"\", # 6 hls",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "main",
-        "kind": 2,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "def main():\n    flvUrl, rtspUrl, rtspsUrl, hlsUrl, multipartUrl = getfeeds()\n    # Main loop: display menu, take input, execute command or exit\n    while True:\n        print_menu()\n        choice = int(input())\n        if choice == 0:\n            break\n        elif choice == 1:\n            token = access_token",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "Temp",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "Temp = True\ncamid = \"<ADD_CAMERA_ID_HERE>\"\naccess_token = \"<ADD_ACCESS_TOKEN_HERE>\"\ntoken_type = \"Bearer\"\nurl = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\nheaders = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "camid",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "camid = \"<ADD_CAMERA_ID_HERE>\"\naccess_token = \"<ADD_ACCESS_TOKEN_HERE>\"\ntoken_type = \"Bearer\"\nurl = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\nheaders = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "access_token",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "access_token = \"<ADD_ACCESS_TOKEN_HERE>\"\ntoken_type = \"Bearer\"\nurl = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\nheaders = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "token_type",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "token_type = \"Bearer\"\nurl = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\nheaders = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "url",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "url = \"https://api.eagleeyenetworks.com/api/v3.0/clientSettings\"\nheaders = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"\n    headers = {",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "headers",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "headers = {\"accept\": \"application/json\",\n            \"authorization\": token_type + access_token\n            }\nresponse = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"\n    headers = {\n        \"accept\": \"application/json\",",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "response",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "response = requests.get(url, headers=headers)\nhttpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"\n    headers = {\n        \"accept\": \"application/json\",\n        \"authorization\": \"Bearer \" + access_token\n    }\n    try:",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "httpsBaseURL",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "httpsBaseURL = response.json()[\"httpsBaseUrl\"][\"hostname\"]\nprint (\"Loading Camera Feeds\", camid)\ndef get_session_response(base_url, access_token):\n    session_url = f\"https://{base_url}/api/v3.0/media/session\"\n    headers = {\n        \"accept\": \"application/json\",\n        \"authorization\": \"Bearer \" + access_token\n    }\n    try:\n        session_response = requests.get(session_url, headers=headers, cookies={'credentials': 'include'})",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "session_response",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "session_response = get_session_response(httpsBaseURL, access_token)\nsession = requests.Session()\nsession.headers.update({\"accept\": \"application/json\", \"authorization\": \"Bearer \" + access_token})\ndef getfeeds():\n        ## request cameras ##        \n        url = \"https://\" + httpsBaseURL + \"/api/v3.0/feeds?deviceId=\" + camid + \"&type=main&include=flvUrl&include=rtspUrl&include=rtspsUrl&include=hlsUrl&include=multipartUrl&include=webRtcUrl&pageSize=100\"\n        headers = {\"accept\": \"application/json\",\n                    \"authorization\": token_type +  ' ' +access_token\n                    }\n        getfeeds = requests.get(url, headers=headers)",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "documentation": {}
-    },
-    {
-        "label": "session",
-        "kind": 5,
-        "importPath": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "description": "mediaFfplayer.playvideoffplay.playvideowithffplay",
-        "peekOfCode": "session = requests.Session()\nsession.headers.update({\"accept\": \"application/json\", \"authorization\": \"Bearer \" + access_token})\ndef getfeeds():\n        ## request cameras ##        \n        url = \"https://\" + httpsBaseURL + \"/api/v3.0/feeds?deviceId=\" + camid + \"&type=main&include=flvUrl&include=rtspUrl&include=rtspsUrl&include=hlsUrl&include=multipartUrl&include=webRtcUrl&pageSize=100\"\n        headers = {\"accept\": \"application/json\",\n                    \"authorization\": token_type +  ' ' +access_token\n                    }\n        getfeeds = requests.get(url, headers=headers)\n        data = json.loads(getfeeds.text)",
-        "detail": "mediaFfplayer.playvideoffplay.playvideowithffplay",
         "documentation": {}
     },
     {

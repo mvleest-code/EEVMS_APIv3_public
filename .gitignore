@@ -98,8 +98,8 @@ ipython_config.py
 # celery beat schedule file
 celerybeat-schedule
 
-# tekst files:
-
+# json files:
+*.json
 
 # SageMath parsed files
 *.sage.py
