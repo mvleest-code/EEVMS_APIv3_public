@@ -6,7 +6,7 @@ import os
 # Load environment variables from a .env file
 load_dotenv()
 
-class EagleEyeNetwork:
+class EagleEyeNetworks:
     def __init__(self):
         # Initialize instance variables
         self.access_token = os.getenv('ACCESS_TOKEN')
@@ -79,5 +79,5 @@ class EagleEyeNetwork:
 
 # Main entry point of the script
 if __name__ == "__main__":
-    eagle_eye_network = EagleEyeNetwork()
-    eagle_eye_network.switch_account()
+    eagle_eye_networks = EagleEyeNetworks()
+    eagle_eye_networks.switch_account()

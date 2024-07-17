@@ -1,6 +1,6 @@
-# EagleEyeNetwork API
+# EagleEyeNetworks API
 
-This is a code sample for interacting with the EagleEyeNetwork API. It can be used to generate access tokens on behalf of the end-user account.
+This is a code sample for interacting with the EagleEyeNetworks API. It can be used to generate access tokens on behalf of the end-user account.
 
 **Use case:**  
 A reseller needs to manage bridges or cameras within one of the end-user accounts. The reseller does not have direct access to these devices. To gain access, they need to generate an access token on behalf of the end-user. With this new access token, the reseller has access to all devices within the end-user account.
@@ -38,10 +38,10 @@ ACCESS_TOKEN=''
 BASE_URL='api.cXXX.eagleeyenetworks.com'
 ```
 
-1. Create an instance of the `EagleEyeNetwork` class:
+1. Create an instance of the `EagleEyeNetworks` class:
 
 ```python
-class EagleEyeNetwork:
+class EagleEyeNetworks:
     def __init__(self):
         # Initialize instance variables
         self.access_token = os.getenv('ACCESS_TOKEN')
@@ -126,8 +126,8 @@ class EagleEyeNetwork:
 ```python
 # Main entry point of the script
 if __name__ == "__main__":
-    eagle_eye_network = EagleEyeNetwork()
-    eagle_eye_network.switch_account()
+    eagle_eye_networks = EagleEyeNetworks()
+    eagle_eye_networks.switch_account()
 ```
 
 1. Output:
