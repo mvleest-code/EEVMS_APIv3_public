@@ -3478,6 +3478,49 @@
         "documentation": {}
     },
     {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "json,",
         "kind": 6,
         "isExtraImport": true,
@@ -3562,15 +3605,6 @@
         "importPath": "io",
         "description": "io",
         "detail": "io",
-        "documentation": {}
-    },
-    {
-        "label": "subprocess",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "subprocess",
-        "description": "subprocess",
-        "detail": "subprocess",
         "documentation": {}
     },
     {
@@ -9195,6 +9229,114 @@
         "description": ".history.mediaAudioPushHttps.audiopush_20240717104704",
         "peekOfCode": "response = requests.post(url, headers=headers, files=files)\nprint (\"audio sent successfully\",response.status_code)",
         "detail": ".history.mediaAudioPushHttps.audiopush_20240717104704",
+        "documentation": {}
+    },
+    {
+        "label": "find_python_files",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121514",
+        "description": ".history.gen_20240717121514",
+        "peekOfCode": "def find_python_files(root_dir):\n    \"\"\"Recursively find all Python files in the directory.\"\"\"\n    python_files = []\n    for subdir, _, files in os.walk(root_dir):\n        for file in files:\n            if file.endswith('.py'):\n                python_files.append(os.path.join(subdir, file))\n    return python_files\ndef extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"",
+        "detail": ".history.gen_20240717121514",
+        "documentation": {}
+    },
+    {
+        "label": "extract_imports",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121514",
+        "description": ".history.gen_20240717121514",
+        "peekOfCode": "def extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"\n    import_re = re.compile(r'^\\s*(import|from)\\s+([^\\s]+)')\n    imports = set()\n    with open(file_path, 'r', encoding='utf-8') as file:\n        for line in file:\n            match = import_re.match(line)\n            if match:\n                module = match.groups()[1].split('.')[0]\n                imports.add(module)",
+        "detail": ".history.gen_20240717121514",
+        "documentation": {}
+    },
+    {
+        "label": "get_installed_packages",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121514",
+        "description": ".history.gen_20240717121514",
+        "peekOfCode": "def get_installed_packages():\n    \"\"\"Get a dictionary of installed packages with versions.\"\"\"\n    result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE, text=True)\n    packages = {}\n    for line in result.stdout.splitlines():\n        if '==' in line:\n            package, version = line.split('==')\n            packages[package] = version\n    return packages\ndef generate_requirements_file(root_dir, output_file):",
+        "detail": ".history.gen_20240717121514",
+        "documentation": {}
+    },
+    {
+        "label": "generate_requirements_file",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121514",
+        "description": ".history.gen_20240717121514",
+        "peekOfCode": "def generate_requirements_file(root_dir, output_file):\n    \"\"\"Generate requirements.txt with all modules used in Python scripts.\"\"\"\n    python_files = find_python_files(root_dir)\n    all_imports = set()\n    for python_file in python_files:\n        all_imports.update(extract_imports(python_file))\n    installed_packages = get_installed_packages()\n    with open(output_file, 'w', encoding='utf-8') as file:\n        for module in sorted(all_imports):\n            if module in installed_packages:",
+        "detail": ".history.gen_20240717121514",
+        "documentation": {}
+    },
+    {
+        "label": "find_python_files",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121709",
+        "description": ".history.gen_20240717121709",
+        "peekOfCode": "def find_python_files(root_dir):\n    \"\"\"Recursively find all Python files in the directory.\"\"\"\n    python_files = []\n    for subdir, _, files in os.walk(root_dir):\n        for file in files:\n            if file.endswith('.py'):\n                python_files.append(os.path.join(subdir, file))\n    return python_files\ndef extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"",
+        "detail": ".history.gen_20240717121709",
+        "documentation": {}
+    },
+    {
+        "label": "extract_imports",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121709",
+        "description": ".history.gen_20240717121709",
+        "peekOfCode": "def extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"\n    import_re = re.compile(r'^\\s*(import|from)\\s+([^\\s]+)')\n    imports = set()\n    with open(file_path, 'r', encoding='utf-8') as file:\n        for line in file:\n            # Skip comments and docstrings\n            if line.strip().startswith(\"#\") or line.strip().startswith((\"'''\", '\"\"\"')):\n                continue\n            match = import_re.match(line)",
+        "detail": ".history.gen_20240717121709",
+        "documentation": {}
+    },
+    {
+        "label": "get_installed_packages",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121709",
+        "description": ".history.gen_20240717121709",
+        "peekOfCode": "def get_installed_packages():\n    \"\"\"Get a dictionary of installed packages with versions.\"\"\"\n    result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE, text=True)\n    packages = {}\n    for line in result.stdout.splitlines():\n        if '==' in line:\n            package, version = line.split('==')\n            packages[package] = version\n    return packages\ndef generate_requirements_file(root_dir, output_file):",
+        "detail": ".history.gen_20240717121709",
+        "documentation": {}
+    },
+    {
+        "label": "generate_requirements_file",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121709",
+        "description": ".history.gen_20240717121709",
+        "peekOfCode": "def generate_requirements_file(root_dir, output_file):\n    \"\"\"Generate requirements.txt with all modules used in Python scripts.\"\"\"\n    python_files = find_python_files(root_dir)\n    all_imports = set()\n    for python_file in python_files:\n        all_imports.update(extract_imports(python_file))\n    installed_packages = get_installed_packages()\n    with open(output_file, 'w', encoding='utf-8') as file:\n        for module in sorted(all_imports):\n            if module in installed_packages:",
+        "detail": ".history.gen_20240717121709",
+        "documentation": {}
+    },
+    {
+        "label": "find_python_files",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121852",
+        "description": ".history.gen_20240717121852",
+        "peekOfCode": "def find_python_files(root_dir):\n    \"\"\"Recursively find all Python files in the directory.\"\"\"\n    python_files = []\n    for subdir, _, files in os.walk(root_dir):\n        for file in files:\n            if file.endswith('.py'):\n                python_files.append(os.path.join(subdir, file))\n    return python_files\ndef extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"",
+        "detail": ".history.gen_20240717121852",
+        "documentation": {}
+    },
+    {
+        "label": "extract_imports",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121852",
+        "description": ".history.gen_20240717121852",
+        "peekOfCode": "def extract_imports(file_path):\n    \"\"\"Extract all imported modules from a Python file.\"\"\"\n    import_re = re.compile(r'^\\s*(import|from)\\s+([^\\s]+)')\n    imports = set()\n    in_docstring = False\n    with open(file_path, 'r', encoding='utf-8') as file:\n        for line in file:\n            # Handle multiline docstrings\n            if in_docstring:\n                if line.strip().endswith(('\"\"\"', \"'''\")):",
+        "detail": ".history.gen_20240717121852",
+        "documentation": {}
+    },
+    {
+        "label": "get_installed_packages",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121852",
+        "description": ".history.gen_20240717121852",
+        "peekOfCode": "def get_installed_packages():\n    \"\"\"Get a dictionary of installed packages with versions.\"\"\"\n    result = subprocess.run(['pip', 'freeze'], stdout=subprocess.PIPE, text=True)\n    packages = {}\n    for line in result.stdout.splitlines():\n        if '==' in line:\n            package, version = line.split('==')\n            packages[package] = version\n    return packages\ndef generate_requirements_file(root_dir, output_file):",
+        "detail": ".history.gen_20240717121852",
+        "documentation": {}
+    },
+    {
+        "label": "generate_requirements_file",
+        "kind": 2,
+        "importPath": ".history.gen_20240717121852",
+        "description": ".history.gen_20240717121852",
+        "peekOfCode": "def generate_requirements_file(root_dir, output_file):\n    \"\"\"Generate requirements.txt with all modules used in Python scripts.\"\"\"\n    python_files = find_python_files(root_dir)\n    all_imports = set()\n    for python_file in python_files:\n        all_imports.update(extract_imports(python_file))\n    installed_packages = get_installed_packages()\n    with open(output_file, 'w', encoding='utf-8') as file:\n        for module in sorted(all_imports):\n            if module in installed_packages:",
+        "detail": ".history.gen_20240717121852",
         "documentation": {}
     },
     {
