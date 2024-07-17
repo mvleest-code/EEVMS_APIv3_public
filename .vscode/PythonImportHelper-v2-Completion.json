@@ -1,11 +1,11 @@
 [
     {
-        "label": "base64",
+        "label": "requests",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "base64",
-        "description": "base64",
-        "detail": "base64",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
         "documentation": {}
     },
     {
@@ -18,12 +18,269 @@
         "documentation": {}
     },
     {
-        "label": "requests",
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
         "documentation": {}
     },
     {
@@ -284,23 +541,6 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
         "label": "keyboard",
         "importPath": "pynput",
         "description": "pynput",
@@ -394,6 +634,285 @@
         "description": "tqdm",
         "isExtraImport": true,
         "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717100007",
+        "description": ".history.authSwitchAccount.app_20240717100007",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717100007",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101318",
+        "description": ".history.authSwitchAccount.app_20240717101318",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101318",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101323",
+        "description": ".history.authSwitchAccount.app_20240717101323",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101323",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101325",
+        "description": ".history.authSwitchAccount.app_20240717101325",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101325",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101326",
+        "description": ".history.authSwitchAccount.app_20240717101326",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101326",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101333",
+        "description": ".history.authSwitchAccount.app_20240717101333",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101333",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101347",
+        "description": ".history.authSwitchAccount.app_20240717101347",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101347",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101349",
+        "description": ".history.authSwitchAccount.app_20240717101349",
+        "peekOfCode": "class EagleEyeNetwork:\n    #\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101349",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101351",
+        "description": ".history.authSwitchAccount.app_20240717101351",
+        "peekOfCode": "class EagleEyeNetwork:\n    # Initialize the class\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101351",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101353",
+        "description": ".history.authSwitchAccount.app_20240717101353",
+        "peekOfCode": "class EagleEyeNetwork:\n    # Initialize the class, \n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101353",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101356",
+        "description": ".history.authSwitchAccount.app_20240717101356",
+        "peekOfCode": "class EagleEyeNetwork:\n    # Initialize the class, set the access_token, base_url, and headers\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101356",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101403",
+        "description": ".history.authSwitchAccount.app_20240717101403",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101403",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101404",
+        "description": ".history.authSwitchAccount.app_20240717101404",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "detail": ".history.authSwitchAccount.app_20240717101404",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101529",
+        "description": ".history.authSwitchAccount.app_20240717101529",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101529",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101948",
+        "description": ".history.authSwitchAccount.app_20240717101948",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101948",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717101954",
+        "description": ".history.authSwitchAccount.app_20240717101954",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717101954",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102152",
+        "description": ".history.authSwitchAccount.app_20240717102152",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102152",
+        "documentation": {}
+    },
+    {
+        "label": "selected_account_identifier",
+        "kind": 5,
+        "importPath": ".history.authSwitchAccount.app_20240717102152",
+        "description": ".history.authSwitchAccount.app_20240717102152",
+        "peekOfCode": "selected_account_identifier = <identifier_of_selected_account>\nfor account in accounts:\n    if account['identifier'] == selected_account_identifier:\n        self.account_name = account['name']\n        break\n        # Payload for the POST request to switch accounts\n        payload = {\n            \"scopes\": [\"vms.all\"],\n            \"type\": \"reseller\",\n            \"targetType\": \"account\",",
+        "detail": ".history.authSwitchAccount.app_20240717102152",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102155",
+        "description": ".history.authSwitchAccount.app_20240717102155",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102155",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102214",
+        "description": ".history.authSwitchAccount.app_20240717102214",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102214",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102217",
+        "description": ".history.authSwitchAccount.app_20240717102217",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102217",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102224",
+        "description": ".history.authSwitchAccount.app_20240717102224",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102224",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102226",
+        "description": ".history.authSwitchAccount.app_20240717102226",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102226",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102229",
+        "description": ".history.authSwitchAccount.app_20240717102229",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102229",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102237",
+        "description": ".history.authSwitchAccount.app_20240717102237",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102237",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102307",
+        "description": ".history.authSwitchAccount.app_20240717102307",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102307",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102400",
+        "description": ".history.authSwitchAccount.app_20240717102400",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102400",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102524",
+        "description": ".history.authSwitchAccount.app_20240717102524",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102524",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102543",
+        "description": ".history.authSwitchAccount.app_20240717102543",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102543",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102647",
+        "description": ".history.authSwitchAccount.app_20240717102647",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102647",
+        "documentation": {}
+    },
+    {
+        "label": "EagleEyeNetwork",
+        "kind": 6,
+        "importPath": ".history.authSwitchAccount.app_20240717102649",
+        "description": ".history.authSwitchAccount.app_20240717102649",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
+        "detail": ".history.authSwitchAccount.app_20240717102649",
         "documentation": {}
     },
     {
@@ -887,7 +1406,7 @@
         "kind": 6,
         "importPath": "authSwitchAccount.app",
         "description": "authSwitchAccount.app",
-        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }\n        self.account_id = \"\"",
+        "peekOfCode": "class EagleEyeNetwork:\n    def __init__(self):\n        # Initialize instance variables\n        self.access_token = os.getenv('ACCESS_TOKEN')\n        self.base_url = os.getenv('BASE_URL')\n        self.headers = {\n            \"accept\": \"application/json\",\n            \"content-type\": \"application/json\",\n            \"authorization\": f\"Bearer {self.access_token}\"\n        }",
         "detail": "authSwitchAccount.app",
         "documentation": {}
     },
