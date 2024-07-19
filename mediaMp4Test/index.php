@@ -5,7 +5,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
-            font-family: 'Roboto', sans-serif; // Updated font-family to Roboto
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f2f5;
@@ -43,7 +43,7 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type='text'], input[type='buttonremove'] {
+        input[type='button'], input[type='buttonremove'] {
             padding: 10px;
             width: 100%;
             margin-right: 5px;
@@ -96,23 +96,11 @@
             color: red;
             margin-top: 10px;
         }
-
     </style>
 </head>
 <body>
     <div class="container">
         <h2>MP4 - Video Loader</h2>
-        <code align="left" style="border: 1px solid #ddd; background-color: #f5f5f5; display: inline-block; padding: 10px;">
-            <p style="color: grey; font-size: 14px;">
-                This MP4 video loader will load up to 4 MP4 videos from the Eagle Eye Cloud VMS.<br>
-                The videos will be loaded in a grid layout.<br>
-                In the background, the loader will fetch the client settings and establish a media session.<br> 
-                The media session will be used to load the videos.<br>
-                The loader will also save the access token and MP4 URL's in local storage.<br>
-                <br>
-                <a href="https://github.com/mvleest-code/mp4MediaTester" target="_blank"><strong>MP4 Media Tester on Github</strong><br></a>
-            </p>
-        </code>
         <br><br>
         <form id="videoForm">
             <div class="input-group">
@@ -131,7 +119,6 @@
         </form>
         <div id="videoContainer" class="video-container"></div>
     </div>
-
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -236,6 +223,10 @@
 
             console.log('Received response: Establish media session');
 
+            const sessionData = await sessionResponse.json();
+            const mediaSessionUrl = sessionData.url;
+
+            // Prepare video grid
             let videoGrid = document.createElement('div');
             videoGrid.className = 'video-grid';
 
@@ -246,14 +237,53 @@
                 }
 
                 console.log(`Loading video: ${url.value}`);
-                let videoHtml = `<video width="320" height="240" controls autoplay>
-                                    <source src="${url.value}" />
-                                 </video>`;
-                videoGrid.insertAdjacentHTML('beforeend', videoHtml);
+
+                // Create video element
+                let videoElement = document.createElement('video');
+                videoElement.width = 320;
+                videoElement.height = 240;
+                videoElement.controls = true;
+                videoElement.autoplay = true;
+
+                // Create source element
+                let sourceElement = document.createElement('source');
+                sourceElement.src = url.value;
+                sourceElement.type = 'video/mp4';
+
+                // Append source to video
+                videoElement.appendChild(sourceElement);
+                // Append video to grid
+                videoGrid.appendChild(videoElement);
+
+                // Fetch the video to establish media session
+                fetch(url.value, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + accessToken,
+                        'accept': '*/*',
+                        'cookie': document.cookie,
+                        'referer': 'https://mp4.mvleest.app/',
+                        'sec-fetch-dest': 'video',
+                        'sec-fetch-mode': 'no-cors',
+                        'sec-fetch-site': 'cross-site',
+                    
+                    },
+                    credentials: 'include'
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load video');
+                    }
+                    console.log(`Video ${url.value} loaded successfully`);
+                })
+                .catch(error => {
+                    console.error('Error loading video:', error);
+                });
             });
 
             videoContainer.appendChild(videoGrid);
         } catch (error) {
+            console.error('Error loading videos:', error);
             videoContainer.innerHTML = `<div class="alert">${error.message}</div>`;
         }
     }
