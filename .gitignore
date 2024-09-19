@@ -132,3 +132,5 @@ dmypy.json
 
 # History files
 /.history
+/.vscode
+.vscode/PythonImportHelper-v2-Completion.json
