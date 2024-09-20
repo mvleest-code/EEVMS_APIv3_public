@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>monitor.mvleest.app</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            padding: 1px;
+        }
+        .error-message {
+            color: red;
+            font-weight: bold;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="iframe-container">
+        <iframe 
+            id="test-iframe" 
+            height="1000" 
+            width="100%" 
+            title="History Browser"
+            style="display:none;"
+        ></iframe>
+        <p class="error-message" id="error-message" style="display:none;">Access token is missing. Cannot load the content.</p>
+    </div>
+
+    <script>
+        // Function to read cookie value
+        function getCookie(name) {
+            let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match) return match[2];
+            return null;
+        }
+
+        // Retrieve the access_token from the cookie
+        const access_token = getCookie('access_token');
+        const iframe = document.getElementById('test-iframe');
+        const errorMessage = document.getElementById('error-message');
+
+        // Check if access_token exists
+        if (access_token) {
+            // Set the iframe src
+            iframe.style.display = 'block';
+            iframe.src = `https://iframe.eagleeyenetworks.com/#/layouts/all`;
+
+            // Listen for messages from the iframe
+            window.addEventListener("message", event => {
+                console.log("Received message from iframe:", event.data);
+                if (event.data === 'een-iframe-loaded' || event.data === "een-iframe-token-expired") {
+                    // Send the access_token dynamically
+                    iframe.contentWindow.postMessage({ 
+                        type: "een-token", 
+                        token: access_token
+                    }, "https://iframe.eagleeyenetworks.com/");
+                }
+            });
+        } else {
+            // Show error message if no access_token
+            errorMessage.style.display = 'block';
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

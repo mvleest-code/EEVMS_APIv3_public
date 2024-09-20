@@ -1,11 +1,133 @@
 [
     {
-        "label": "json,",
+        "label": "requests",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "json.",
-        "description": "json.",
-        "detail": "json.",
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "make_response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "make_response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "make_response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
         "documentation": {}
     },
     {
@@ -137,6 +259,30 @@
         "documentation": {}
     },
     {
+        "label": "make_response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "request",
         "importPath": "flask",
         "description": "flask",
@@ -161,39 +307,46 @@
         "documentation": {}
     },
     {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "Event",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "json,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json.",
+        "description": "json.",
+        "detail": "json.",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "json",
         "description": "json",
         "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "requests",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "requests",
-        "description": "requests",
-        "detail": "requests",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
         "documentation": {}
     },
     {
@@ -274,31 +427,6 @@
         "description": "dotenv",
         "isExtraImport": true,
         "detail": "dotenv",
-        "documentation": {}
-    },
-    {
-        "label": "threading",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "threading",
-        "description": "threading",
-        "detail": "threading",
-        "documentation": {}
-    },
-    {
-        "label": "Thread",
-        "importPath": "threading",
-        "description": "threading",
-        "isExtraImport": true,
-        "detail": "threading",
-        "documentation": {}
-    },
-    {
-        "label": "Event",
-        "importPath": "threading",
-        "description": "threading",
-        "isExtraImport": true,
-        "detail": "threading",
         "documentation": {}
     },
     {
@@ -394,6 +522,168 @@
         "description": "tqdm",
         "isExtraImport": true,
         "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "refresh_access_token",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "def refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"lC80lkjRf-e72gFBFggbHOHUEq-VqJxeOLQhrjeZUpPkdSbXr_pvDDT_BjG3NMqDplFVLAS7uLembeIIlr0g7_GzGZIB565eQ5SsgMo7EZN7DRJnDr7Y4PtgABquKhFi\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")\n    payload = f'grant_type=refresh_token&refresh_token={refresh_token}'\n    headers = {",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_token_refresh",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "def schedule_token_refresh():\n    while True:\n        refresh_access_token()\n        # Wait for 12 hours before refreshing again\n        sleep(12 * 3600)\n# Flask route to serve the access token to the template\n@app.route('/', methods=['GET'])\ndef index():\n    # Check if access_token exists and is valid\n    if access_token:",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "def index():\n    # Check if access_token exists and is valid\n    if access_token:\n        # Create a response to render the template\n        response = make_response(render_template('index.html'))\n        # Set the access token as a cookie\n        response.set_cookie('access_token', access_token)\n        return response\n    else:\n        # Token is not available, trigger a refresh and try again",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "start_refresh_thread",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "def start_refresh_thread():\n    # Refresh the token immediately to ensure it's available\n    refresh_access_token()\n    # Then start the periodic token refresh thread\n    refresh_thread = threading.Thread(target=schedule_token_refresh)\n    refresh_thread.daemon = True  # Daemonize thread to shut down with the program\n    refresh_thread.start()\nif __name__ == '__main__':\n    # Start the token refresh thread\n    start_refresh_thread()",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "app = Flask(__name__)\n# In-memory variable to store the access token\naccess_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"lC80lkjRf-e72gFBFggbHOHUEq-VqJxeOLQhrjeZUpPkdSbXr_pvDDT_BjG3NMqDplFVLAS7uLembeIIlr0g7_GzGZIB565eQ5SsgMo7EZN7DRJnDr7Y4PtgABquKhFi\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "access_token",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141553",
+        "description": ".history.iframeMonitor.app_20240920141553",
+        "peekOfCode": "access_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"lC80lkjRf-e72gFBFggbHOHUEq-VqJxeOLQhrjeZUpPkdSbXr_pvDDT_BjG3NMqDplFVLAS7uLembeIIlr0g7_GzGZIB565eQ5SsgMo7EZN7DRJnDr7Y4PtgABquKhFi\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")",
+        "detail": ".history.iframeMonitor.app_20240920141553",
+        "documentation": {}
+    },
+    {
+        "label": "refresh_access_token",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "def refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")\n    payload = f'grant_type=refresh_token&refresh_token={refresh_token}'\n    headers = {",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_token_refresh",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "def schedule_token_refresh():\n    while True:\n        refresh_access_token()\n        # Wait for 12 hours before refreshing again\n        sleep(12 * 3600)\n# Flask route to serve the access token to the template\n@app.route('/', methods=['GET'])\ndef index():\n    # Check if access_token exists and is valid\n    if access_token:",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "def index():\n    # Check if access_token exists and is valid\n    if access_token:\n        # Create a response to render the template\n        response = make_response(render_template('index.html'))\n        # Set the access token as a cookie\n        response.set_cookie('access_token', access_token)\n        return response\n    else:\n        # Token is not available, trigger a refresh and try again",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "start_refresh_thread",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "def start_refresh_thread():\n    # Refresh the token immediately to ensure it's available\n    refresh_access_token()\n    # Then start the periodic token refresh thread\n    refresh_thread = threading.Thread(target=schedule_token_refresh)\n    refresh_thread.daemon = True  # Daemonize thread to shut down with the program\n    refresh_thread.start()\nif __name__ == '__main__':\n    # Start the token refresh thread\n    start_refresh_thread()",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "app = Flask(__name__)\n# In-memory variable to store the access token\naccess_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "access_token",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141605",
+        "description": ".history.iframeMonitor.app_20240920141605",
+        "peekOfCode": "access_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"Basic NzdiYzg3ZjA0MzE2NGVhNzg5ZTE4NTA0ZjQwOTIyZjI6KnktNkNVOFBkQ0BnIXU8U2xkYTk=\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")",
+        "detail": ".history.iframeMonitor.app_20240920141605",
+        "documentation": {}
+    },
+    {
+        "label": "refresh_access_token",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "def refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")\n    payload = f'grant_type=refresh_token&refresh_token={refresh_token}'\n    headers = {",
+        "detail": ".history.iframeMonitor.app_20240920141610",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_token_refresh",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "def schedule_token_refresh():\n    while True:\n        refresh_access_token()\n        # Wait for 12 hours before refreshing again\n        sleep(12 * 3600)\n# Flask route to serve the access token to the template\n@app.route('/', methods=['GET'])\ndef index():\n    # Check if access_token exists and is valid\n    if access_token:",
+        "detail": ".history.iframeMonitor.app_20240920141610",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "def index():\n    # Check if access_token exists and is valid\n    if access_token:\n        # Create a response to render the template\n        response = make_response(render_template('index.html'))\n        # Set the access token as a cookie\n        response.set_cookie('access_token', access_token)\n        return response\n    else:\n        # Token is not available, trigger a refresh and try again",
+        "detail": ".history.iframeMonitor.app_20240920141610",
+        "documentation": {}
+    },
+    {
+        "label": "start_refresh_thread",
+        "kind": 2,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "def start_refresh_thread():\n    # Refresh the token immediately to ensure it's available\n    refresh_access_token()\n    # Then start the periodic token refresh thread\n    refresh_thread = threading.Thread(target=schedule_token_refresh)\n    refresh_thread.daemon = True  # Daemonize thread to shut down with the program\n    refresh_thread.start()\nif __name__ == '__main__':\n    # Start the token refresh thread\n    start_refresh_thread()",
+        "detail": ".history.iframeMonitor.app_20240920141610",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "app = Flask(__name__)\n# In-memory variable to store the access token\naccess_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"",
+        "detail": ".history.iframeMonitor.app_20240920141610",
+        "documentation": {}
+    },
+    {
+        "label": "access_token",
+        "kind": 5,
+        "importPath": ".history.iframeMonitor.app_20240920141610",
+        "description": ".history.iframeMonitor.app_20240920141610",
+        "peekOfCode": "access_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")",
+        "detail": ".history.iframeMonitor.app_20240920141610",
         "documentation": {}
     },
     {
@@ -1267,6 +1557,60 @@
         "description": "eventsRequestTimer.app",
         "peekOfCode": "total_script_time = end_script_time - start_script_time  # Calculate the total script time\nprint(f\"Total script time: {total_script_time} seconds\")",
         "detail": "eventsRequestTimer.app",
+        "documentation": {}
+    },
+    {
+        "label": "refresh_access_token",
+        "kind": 2,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "def refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")\n    payload = f'grant_type=refresh_token&refresh_token={refresh_token}'\n    headers = {",
+        "detail": "iframeMonitor.app",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_token_refresh",
+        "kind": 2,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "def schedule_token_refresh():\n    while True:\n        refresh_access_token()\n        # Wait for 12 hours before refreshing again\n        sleep(12 * 3600)\n# Flask route to serve the access token to the template\n@app.route('/', methods=['GET'])\ndef index():\n    # Check if access_token exists and is valid\n    if access_token:",
+        "detail": "iframeMonitor.app",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "def index():\n    # Check if access_token exists and is valid\n    if access_token:\n        # Create a response to render the template\n        response = make_response(render_template('index.html'))\n        # Set the access token as a cookie\n        response.set_cookie('access_token', access_token)\n        return response\n    else:\n        # Token is not available, trigger a refresh and try again",
+        "detail": "iframeMonitor.app",
+        "documentation": {}
+    },
+    {
+        "label": "start_refresh_thread",
+        "kind": 2,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "def start_refresh_thread():\n    # Refresh the token immediately to ensure it's available\n    refresh_access_token()\n    # Then start the periodic token refresh thread\n    refresh_thread = threading.Thread(target=schedule_token_refresh)\n    refresh_thread.daemon = True  # Daemonize thread to shut down with the program\n    refresh_thread.start()\nif __name__ == '__main__':\n    # Start the token refresh thread\n    start_refresh_thread()",
+        "detail": "iframeMonitor.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "app = Flask(__name__)\n# In-memory variable to store the access token\naccess_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"",
+        "detail": "iframeMonitor.app",
+        "documentation": {}
+    },
+    {
+        "label": "access_token",
+        "kind": 5,
+        "importPath": "iframeMonitor.app",
+        "description": "iframeMonitor.app",
+        "peekOfCode": "access_token = None\n# Function to request a new access token using refresh token\ndef refresh_access_token():\n    global access_token  # Allow the function to modify the global variable\n    url = \"https://auth.eagleeyenetworks.com/oauth2/token\"\n    # Get refresh token and authorization header from environment\n    refresh_token = \"\"\n    auth_header = \"\"\n    print(f\"Refresh Token: {refresh_token}\")\n    print(f\"Authorization Header: {auth_header}\")",
+        "detail": "iframeMonitor.app",
         "documentation": {}
     },
     {
