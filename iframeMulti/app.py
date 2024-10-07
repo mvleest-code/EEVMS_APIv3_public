@@ -37,4 +37,4 @@ def historylive():
     return render_template('historylive.html', access_token=access_token, camera_id=camera_id)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3337)
+    app.run(debug=True, port=3333)
