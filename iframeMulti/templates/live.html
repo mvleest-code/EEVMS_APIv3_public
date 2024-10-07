@@ -63,6 +63,10 @@
       const iframe = document.getElementById('test-iframe').contentWindow;
 
       window.addEventListener("message", event => {
+        if (event.origin !== "https://iframe.eagleeyenetworks.com") {
+          // Ignore messages from unexpected origins
+          return;
+        }
         if (event.data === 'een-iframe-loaded' || event.data === "een-iframe-token-expired") {
           // Send the access_token dynamically
           iframe.postMessage({ 
@@ -70,7 +74,7 @@
             token: access_token
           }, "https://iframe.eagleeyenetworks.com/");
         }
-      });
+      });      
 
       function goBack() {
           window.history.back();
