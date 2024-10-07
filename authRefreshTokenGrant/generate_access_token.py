@@ -1,19 +1,11 @@
 import json
 import requests
 from urllib.parse import quote
-import os
+
+import base64
 
 URL = "https://auth.eagleeyenetworks.com/oauth2/token"
 
-# Function to get the absolute file path
-def get_filepath(filename):
-    script_directory = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(script_directory, filename)
-
-# Function to write JSON data to a file
-def write_json(filename, data):
-    with open(get_filepath(filename), 'w') as f:
-        json.dump(data, f, indent=4)
 
 # Function to make a POST request
 def make_request(url, headers, data):
@@ -28,10 +20,9 @@ def make_request(url, headers, data):
         raise
 
 # Function to get the required data from the user
-## keep in mind that the clientId and clientSecret should be base64 encoded: clientId:clientSecret ##
 def get_required_data():
     required_data = {}
-    required_keys = ['refresh_token','cc_base64']
+    required_keys = ['refresh_token', 'client_id', 'client_secret']
 
     for key in required_keys:
         required_data[key] = input(f"Enter the value for {key}: ")
@@ -44,9 +35,13 @@ def get_required_data():
 def main():
     required_data = get_required_data()
 
+    # Base64 encode the client_id and client_secret
+    client_credentials = f"{required_data['client_id']}:{required_data['client_secret']}"
+    cc_base64 = base64.b64encode(client_credentials.encode()).decode()
+
     headers = {
         "Accept": "application/json",
-        "Authorization": f"Basic {required_data['cc_base64']}"
+        "Authorization": f"Basic {cc_base64}"
     }
 
     data = {
@@ -55,8 +50,7 @@ def main():
     }
 
     new_access_data = make_request(URL, headers, data)
-    write_json('access_response.json', new_access_data)
-    print("New access token and refresh token written to access_response.json")
+    print(json.dumps(new_access_data, indent=4))
 
 if __name__ == "__main__":
     main()
