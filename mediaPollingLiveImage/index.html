@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Polling Example</title>
+</head>
+<body>
+    <h1>Basic Polling Example</h1>
+    <img id="liveImage" alt="Live Image" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accessToken = 'your_access_token';
+            const phpHostname = 'api.example.com';
+            const cameraId = 'your_camera_id';
+            const interval = 200; // Polling interval in milliseconds
+
+            const imgElement = document.getElementById('liveImage');
+
+            async function pollLiveImage() {
+                const liveImageUrl = `https://${phpHostname}/api/v3.0/media/liveImage.jpeg?deviceId=${cameraId}&type=preview`;
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        accept: 'image/jpeg',
+                        authorization: `Bearer ${accessToken}`,
+                    },
+                };
+
+                try {
+                    const response = await fetch(liveImageUrl, options);
+                    if (response.ok) {
+                        const blob = await response.blob();
+
+                        // Preload the next image to avoid flicker
+                        const newImage = new Image();
+                        newImage.src = URL.createObjectURL(blob);
+                        newImage.onload = () => {
+                            imgElement.src = newImage.src;
+                        };
+                    } else {
+                        console.error('Failed to fetch live image:', response.status);
+                    }
+                } catch (error) {
+                    console.error('Error fetching live image:', error);
+                }
+            }
+
+            // Start polling
+            pollLiveImage(); // Initial fetch
+            setInterval(pollLiveImage, interval);
+        });
+    </script>
+</body>
+</html>
