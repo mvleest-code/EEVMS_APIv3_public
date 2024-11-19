@@ -4,7 +4,7 @@ A simple web app to fetch and display live images from a camera using polling.
 
 ## Features
 - Fetches live images via an API.
-- Updates the image every 200ms without page reload.
+- Updates the image every 100ms without page reload.
 - Reduces flickering with image preloading.
 
 ## Usage
