@@ -1,0 +1,51 @@
+{
+  "startTimestamp": "2024-02-07T00:00:00.000Z",
+  "endTimestamp": null,
+  "span": true,
+  "accountId": "000011ff",
+  "actorId": "100d4c43",
+  "actorAccountId": "000011ff",
+  "actorType": "camera",
+  "actorName": "Entry camera",
+  "creatorId": "een.bridge.001",
+  "type": "een.motionInRegionDetectionEvent.v1",
+  "dataSchemas": [
+    "een.motionRegion.v1",
+    "een.objectDetection.v1",
+    "een.fullFrameImageUrl.v1",
+    "een.croppedFrameImageUrl.v1"
+  ],
+  "data": [
+    {
+      "type": "een.motionRegion.v1",
+      "id": "region123",
+      "name": "Entry Gate",
+      "area": [
+        [0.0, 0.0],
+        [1.0, 0.0],
+        [1.0, 1.0],
+        [0.0, 1.0]
+      ]
+    },
+    {
+      "type": "een.objectDetection.v1",
+      "timestamp": "2024-02-07T00:00:00.000Z",
+      "boundingBox": [0.1, 0.2, 0.6, 0.7],
+      "objectId": "camera-46743c2:d3275d08-16df-4176-b9c6-688046c858a2",
+      "class": "vehicle",
+      "classConfidence": 0.95
+    },
+    {
+      "type": "een.fullFrameImageUrl.v1",
+      "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/motion/parking/891011-full.jpeg",
+      "timestamp": "2024-02-07T00:00:00.000Z",
+      "feedType": "main"
+    },
+    {
+      "type": "een.croppedFrameImageUrl.v1",
+      "httpsUrl": "https://media.c001.eagleeyenetworks.com/assets/events/motion/parking/891011-cropped.jpeg",
+      "timestamp": "2024-02-07T00:00:00.000Z",
+      "objectId": "camera-46743c2:d3275d08-16df-4176-b9c6-688046c858a2"
+    }
+  ]
+}
