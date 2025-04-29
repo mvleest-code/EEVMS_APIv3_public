@@ -1,15 +1,15 @@
 const express = require('express');
 const axios = require('axios');
 const crypto = require('crypto');
-const helmet = require('helmet');
 require('dotenv').config();
+
 const app = express();
-app.use(helmet());
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const hostName = '127.0.0.1';
 const port = 3333;
 const stateStore = new Set();
+
 const getTokens = async (code) => {
   const url = `https://auth.eagleeyenetworks.com/oauth2/token?grant_type=authorization_code&scope=vms.all&code=${code}&redirect_uri=http://${hostName}:${port}`;
   const response = await axios.post(url, {}, {
@@ -17,22 +17,28 @@ const getTokens = async (code) => {
   });
   return response.data;
 };
+
 app.get('/', async (req, res) => {
   const code = req.query.code;
   const returnedState = req.query.state;
+
   if (!code) {
     const state = crypto.randomUUID();
     stateStore.add(state);
     const authUrl = `https://auth.eagleeyenetworks.com/oauth2/authorize?client_id=${clientId}&response_type=code&scope=vms.all&redirect_uri=http://${hostName}:${port}&state=${state}`;
     return res.redirect(authUrl);
   }
+
   if (!returnedState || !stateStore.has(returnedState)) {
     return res.status(403).send('Invalid OAuth state.');
   }
+
   stateStore.delete(returnedState);
+
   try {
     const tokens = await getTokens(code);
     const refreshToken = tokens.refresh_token;
+
     const page = `
     <html>
     <head>
@@ -40,7 +46,6 @@ app.get('/', async (req, res) => {
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
-      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://img.icons8.com;">
     </head>
     <body>
       <div class="container" style="margin-top: 50px;">
@@ -53,7 +58,7 @@ app.get('/', async (req, res) => {
         <div class="row" style="margin-top: 20px;">
           <div class="col-md-12">
             <div style="display: flex; justify-content: center; align-items: center;">
-              <input type="text" value="${refreshToken}" readonly class="form-control" style="width: 90%; max-width: 800px;">
+              <input id="tokenInput" type="text" value="${refreshToken}" readonly class="form-control" style="width: 90%; max-width: 800px;">
               <svg onclick="copyToken()" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                    viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"
                    stroke-linejoin="round" style="cursor: pointer; margin-left: 10px;" title="Copy">
@@ -72,11 +77,12 @@ app.get('/', async (req, res) => {
       </div>
       <script>
         function copyToken() {
-          const input = document.querySelector('input');
+          const input = document.getElementById('tokenInput');
           input.select();
           document.execCommand('copy');
           alert('Token copied!');
         }
+      
         function logout() {
           window.location.href = "/";
         }
@@ -90,6 +96,7 @@ app.get('/', async (req, res) => {
     res.status(500).send('Authentication failed.');
   }
 });
+
 app.listen(port, () => {
   console.log(`Server running at http://${hostName}:${port}`);
 });
