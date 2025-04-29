@@ -1,136 +1,141 @@
-# Ignore IDE directories
-.idea/
-.lh/
-.vscode/
+# IDE directories (ignore everywhere)
+**/.idea/
+**/.lh/
+**/.vscode/
 
-# Ignore all log files
-*.log
-*.mp4
-*.bin
-.DS_Store
+# Log/media/binary/system files (ignore everywhere)
+**/*.log
+**/*.mp4
+**/*.bin
+**/.DS_Store
 
-# Ignore specific project directories
-/mediaAudioPushHttps/.history
-/mediaAudioPushHttps/.lh
-/mediaAudioPushHttps/.vscode
-/venv
+# Specific project directories (recursive)
+**/.history
+**/.lh
+**/.vscode
+**/mediaAudioPushHttps/.history
+**/mediaAudioPushHttps/.lh
+**/mediaAudioPushHttps/.vscode
+
+# Virtual environments (ignore all env/venv-like dirs anywhere)
+**/venv*/
+**/env*/
+**/ENV*/
+**/.env*/
+**/.venv*/
+**/env.bak*/
+**/venv.bak*/
+**/.virtualenv/
 
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
 
 # C extensions
-*.so
+**/*.so
 
 # Distribution / packaging
-.Python
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-pip-wheel-metadata/
-wheelhouse/
-*.egg-info/
-.eggs/
-*.egg
-dist/
-build/
-*.whl
+**/.Python
+**/pip-wheel-metadata/
+**/wheelhouse/
+**/*.egg-info/
+**/.eggs/
+**/*.egg
+**/dist/
+**/build/
+**/*.whl
 
 # PyInstaller
-*.manifest
-*.spec
+**/*.manifest
+**/*.spec
 
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+**/pip-log.txt
+**/pip-delete-this-directory.txt
 
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+**/htmlcov/
+**/.tox/
+**/.nox/
+**/.coverage
+**/.coverage.*
+**/.cache
+**/nosetests.xml
+**/coverage.xml
+**/*.cover
+**/*.py,cover
+**/.hypothesis/
+**/.pytest_cache/
 
 # Translations
-*.mo
-*.pot
+**/*.mo
+**/*.pot
 
-# Django stuff
-local_settings.py
-db.sqlite3
+# Django
+**/local_settings.py
+**/db.sqlite3
 
-# Flask stuff
-instance/
-.webassets-cache
+# Flask
+**/instance/
+**/.webassets-cache
 
-# Scrapy stuff
-.scrapy
+# Scrapy
+**/.scrapy
 
-# Sphinx documentation
-docs/_build/
+# Sphinx
+**/docs/_build/
 
 # PyBuilder
-target/
+**/target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Jupyter
+**/.ipynb_checkpoints
 
 # IPython
-profile_default/
-ipython_config.py
+**/profile_default/
+**/ipython_config.py
 
 # pyenv
-.python-version
+**/.python-version
 
-# celery beat schedule file
-celerybeat-schedule
+# Celery
+**/celerybeat-schedule
 
-# JSON files
-*.json
+# JSON
+**/*.json
 
-# SageMath parsed files
-*.sage.py
+# SageMath
+**/*.sage.py
 
-# Environments
-.env
-.venv
-.envrc
-.direnv
-.virtualenv
-.env.*.local
+# Environment variable files
+**/.env
+**/.env.*
+**/.envrc
+**/.direnv
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Spyder
+**/.spyderproject
+**/.spyproject
 
-# Rope project settings
-.ropeproject
+# Rope
+**/.ropeproject
 
-# mkdocs documentation
-/site
+# MkDocs
+**/site
 
 # mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+**/.mypy_cache/
+**/.dmypy.json
+**/dmypy.json
 
-# Pyre type checker
-.pyre/
+# Pyre
+**/.pyre/
 
-# VSCode specific
-*.code-workspace
+# VSCode workspaces
+**/*.code-workspace
 
-# History files
-/.history
-/.vscode
-.vscode/PythonImportHelper-v2-Completion.json
+# History/IDE-specific
+**/.history
+**/.vscode
+**/.vscode/PythonImportHelper-v2-Completion.json
